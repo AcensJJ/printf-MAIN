@@ -6,7 +6,7 @@
 /*   By: jacens <jacens@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/11/18 10:29:41 by jacens       #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/30 13:27:47 by jacens      ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/30 14:53:20 by jacens      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -227,17 +227,17 @@ int		main(void)
 
 
 
-	ret = ft_printf("Moi : |%c|\n", 0);
-	ft_printf("MoiR : ret = |%d|\n", ret);
-	ret = printf("Lui : |%c|\n", 0);
-	printf("LuiR : ret = |%d|\n", ret);
-	i++;ft_printf("i = %d\n\n", i);
+	// ret = ft_printf("Moi : |%c|\n", 0);
+	// ft_printf("MoiR : ret = |%d|\n", ret);
+	// ret = printf("Lui : |%c|\n", 0);
+	// printf("LuiR : ret = |%d|\n", ret);
+	// i++;ft_printf("i = %d\n\n", i);
 
-	ret = ft_printf("Moi : |%5c|\n", 0);
-	ft_printf("MoiR : ret = |%d|\n", ret);
-	ret = printf("Lui : |%5c|\n", 0);
-	printf("LuiR : ret = |%d|\n", ret);
-	i++;ft_printf("i = %d\n\n", i);
+	// ret = ft_printf("Moi : |%5c|\n", 0);
+	// ft_printf("MoiR : ret = |%d|\n", ret);
+	// ret = printf("Lui : |%5c|\n", 0);
+	// printf("LuiR : ret = |%d|\n", ret);
+	// i++;ft_printf("i = %d\n\n", i);
 
 
 
@@ -740,6 +740,32 @@ int		main(void)
 	// ret = printf("Lui : |%--45d|\n", 50);
 	// printf("LuiR : ret = |%d|\n", ret);
 	// i++;ft_printf("i = %d\n\n", i);
+
+
+
+	ret = ft_printf("Moi : [%05d]", -38);
+	ft_printf("MoiR : ret = |%d|\n", ret);
+	ret = printf("Lui : [%05d]", -38);
+	printf("LuiR : ret = |%d|\n", ret);
+	i++;ft_printf("i = %d\n\n", i);
+
+	ret = ft_printf("Moi : [%4.s]", "salut");
+	ft_printf("MoiR : ret = |%d|\n", ret);
+	ret = printf("Lui : [%4.s]", "salut");
+	printf("LuiR : ret = |%d|\n", ret);
+	i++;ft_printf("i = %d\n\n", i);
+
+	ret = ft_printf("Moi : [%20.10s]", "salut");
+	ft_printf("MoiR : ret = |%d|\n", ret);
+	ret = printf("Lui : [%20.10s]", "salut");
+	printf("LuiR : ret = |%d|\n", ret);
+	i++;ft_printf("i = %d\n\n", i);
+
+	ret = ft_printf("Moi : [%5.X]", 0);
+	ft_printf("MoiR : ret = |%d|\n", ret);
+	ret = printf("Lui : [%5.X]", 0);
+	printf("LuiR : ret = |%d|\n", ret);
+	i++;ft_printf("i = %d\n\n", i);
 
 	return (0);
 	// ft_printf("\ns = |%d|,p = |%d|,z = |%d|\nMoi = |", struc->space, struc->print, struc->zero);
