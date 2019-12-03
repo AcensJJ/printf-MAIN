@@ -6,7 +6,7 @@
 /*   By: jacens <jacens@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/11/18 10:29:41 by jacens       #+#   ##    ##    #+#       */
-/*   Updated: 2019/12/03 00:51:36 by jacens      ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/12/03 16:14:26 by jacens      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -889,6 +889,26 @@ int		main(void)
 	// ret = printf("Lui : |%0*d|", -10, 42);
 	// printf("LuiR : ret = |%d|\n", ret);
 	// i++;ft_printf("i = %d\n\n", i);
+
+
+
+	ret = ft_printf("Moi : |%p|\n", (void *)1);
+	ft_printf("MoiR : ret = |%d|\n", ret);
+	ret = printf("Lui : |%p|\n", (void *)1);
+	printf("LuiR : ret = |%d|\n", ret);
+	i++;ft_printf("i = %d\n\n", i);
+
+	ret = ft_printf("Moi : |%p|\n", (void *)321);
+	ft_printf("MoiR : ret = |%d|\n", ret);
+	ret = printf("Lui : |%p|\n", (void *)321);
+	printf("LuiR : ret = |%d|\n", ret);
+	i++;ft_printf("i = %d\n\n", i);
+
+	ret = ft_printf("Moi : |%p|\n", (void *)-1);
+	ft_printf("MoiR : ret = |%d|\n", ret);
+	ret = printf("Lui : |%p|\n", (void *)-1);
+	printf("LuiR : ret = |%d|\n", ret);
+	i++;ft_printf("i = %d\n\n", i);
 
 	return (0);
 	// ft_printf("\ns = |%d|,p = |%d|,z = |%d|,l = |%d|,dot = |%d|\nMoi = |", struc->space, struc->print, struc->zero, struc->left, struc->dot);
